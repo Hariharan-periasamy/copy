@@ -1,0 +1,93 @@
+/* Main container */
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('../public/blob-scene-haikei.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Form Section */
+.form-section {
+  padding: 30px;
+  background: rgba( 255, 255, 255, 0.16 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 3px );
+  -webkit-backdrop-filter: blur( 7px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  color: #fff !important;
+  margin-bottom: 20px;
+}
+
+/* Login/Register Form */
+.login-form,
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Form Inputs */
+.form-control {
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  border: 1px solid #ddd;
+}
+
+.form-control:focus {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Floating Label */
+.floating-label {
+  color: #fff;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #6200ea; /* Your preferred button color */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3700b3;
+}
+
+/* Switch between login/register */
+p {
+  text-align: center;
+  color: #fff;
+}
+
+p span {
+  color: #6200ea;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+p span:hover {
+  color: #3700b3;
+}
+
+/* Input Bottom Spacing */
+.row .form-group {
+  margin-bottom: 20px; /* Creates space between input fields */
+}
